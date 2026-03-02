@@ -1,2 +1,3 @@
-# adaptive-llm-routing
-Adaptive routing between small and large language models using uncertainty and confidence signals. This project investigates cost–accuracy trade-offs, failure detection, and escalation strategies under fully local deployment settings.
+# Adaptive LLM Routing
+
+This repository investigates confidence-guided routing between small and large language models (SLMs and LLMs). The goal is to study when small models are sufficient, how uncertainty signals predict failure, and how adaptive escalation affects cost–accuracy trade-offs under fully local deployment.
