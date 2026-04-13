@@ -1,0 +1,16 @@
+# logs & outputs
+logs/
+
+# cache
+__pycache__/
+*.pyc
+
+# env
+venv/
+torch_gpu_env/
+
+# IDE
+.vscode/
+
+# system
+.DS_Store
