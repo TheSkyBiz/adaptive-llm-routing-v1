@@ -1,0 +1,22 @@
+model:
+  slm: "qwen2.5:1.5b"
+  llm: "llama3:8b"
+
+generation:
+  temperature: 0
+  top_p: 1
+  slm_max_new_tokens: 64
+  llm_max_new_tokens: 96
+
+dataset:
+  name: "hotpot_qa"
+  subset: "distractor" 
+  split: "validation"
+  sample_limit: 2000 
+
+run:
+  seed: 42
+  output_log: "logs/squad_llm.jsonl"
+
+routing:
+  mode: "v2"
