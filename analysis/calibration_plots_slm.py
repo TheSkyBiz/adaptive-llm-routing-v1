@@ -86,6 +86,8 @@ def histogram(entries, save):
     plt.figure()
     plt.hist([e["confidence"] for e in entries], bins=20)
     plt.title("Confidence Distribution (SLM)")
+    plt.xlabel("Confidence")
+    plt.ylabel("Number of Samples with Confidence in Bin")
     plt.grid()
     plt.savefig(save, dpi=300)
     plt.close()
@@ -128,7 +130,7 @@ def logprob_distribution(entries, save):
 
 if __name__ == "__main__":
 
-    log_path = "../logs/hotpot_qa_slm.jsonl"
+    log_path = "../logs/squad_v2_slm.jsonl"
 
     entries = load_entries(log_path)
 
