@@ -128,7 +128,7 @@ def logprob_distribution(entries, save):
 
 if __name__ == "__main__":
 
-    log_path = "../logs/squad_v2_llm.jsonl"
+    log_path = "../logs/squad_llm.jsonl"
 
     entries = load_entries(log_path)
 
